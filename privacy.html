@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — Clari by BFY</title>
+<meta name="description" content="Clari Privacy Policy. We collect no personal data. Your transactions, SMS, and statements stay on your device." />
+<meta property="og:url" content="https://clari.bfyai.in/privacy.html" />
+<link rel="canonical" href="https://clari.bfyai.in/privacy.html" />
+<link rel="icon" href="icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --purple: #7c3aed; --purple-lt: #a78bfa; --sky: #38bdf8;
+    --bg: #08050f; --surface: #110d1f; --border: rgba(124,58,237,0.18);
+    --text: #f1f0f8; --text2: #a09ab8; --text3: #6d6685;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 5vw; height: 64px;
+    backdrop-filter: blur(20px); background: rgba(8,5,15,0.85);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .nav-logo-img { width: 48px; height: 48px; border-radius: 12px; object-fit: cover; flex-shrink: 0; }
+  .nav-logo-text { font-size: 15px; font-weight: 800; color: var(--text); letter-spacing: -0.3px; line-height: 1.25; }
+  .nav-logo-text .sub { display: block; font-size: 10px; font-weight: 500; color: var(--text2); }
+  nav a.back { color: var(--purple-lt); text-decoration: none; font-size: 14px; font-weight: 600; }
+  nav a.back:hover { text-decoration: underline; }
+  .bm { font-weight: 700; letter-spacing: -0.3px; }
+  .bm small { font-size: 0.78em; font-weight: 600; }
+  .bm .ri { display: inline-block; position: relative; }
+  .bm .ri::after { content: ''; position: absolute; width: 0.22em; height: 0.22em; background: #ef4444; border-radius: 50%; top: 0.06em; left: 50%; transform: translateX(-50%); }
+
+  .page-hero {
+    padding: 72px 5vw 40px;
+    background: radial-gradient(ellipse at 60% 0%, rgba(124,58,237,0.15) 0%, transparent 60%);
+    border-bottom: 1px solid var(--border);
+  }
+  .page-hero .chip { display: inline-block; background: rgba(124,58,237,0.15); border: 1px solid rgba(124,58,237,0.3); color: var(--purple-lt); font-size: 12px; font-weight: 700; padding: 5px 14px; border-radius: 100px; margin-bottom: 16px; letter-spacing: .5px; }
+  .page-hero h1 { font-size: clamp(32px, 5vw, 56px); font-weight: 900; letter-spacing: -2px; margin-bottom: 12px; }
+  .page-hero .meta { font-size: 14px; color: var(--text3); }
+  .page-hero .summary { margin-top: 20px; background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.2); border-radius: 14px; padding: 18px 22px; font-size: 15px; color: #4ade80; font-weight: 500; max-width: 640px; }
+
+  .content { max-width: 780px; margin: 0 auto; padding: 56px 5vw 80px; }
+  .toc { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px 28px; margin-bottom: 48px; }
+  .toc h3 { font-size: 14px; font-weight: 700; color: var(--text2); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; }
+  .toc ol { padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+  .toc ol li a { color: var(--purple-lt); text-decoration: none; font-size: 14px; font-weight: 500; }
+  .toc ol li a:hover { text-decoration: underline; }
+
+  .section { margin-bottom: 52px; scroll-margin-top: 80px; }
+  .section h2 { font-size: 24px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+  .section h2 .num { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 8px; background: rgba(124,58,237,0.2); color: var(--purple-lt); font-size: 13px; font-weight: 700; flex-shrink: 0; }
+  .section p { font-size: 15px; color: var(--text2); margin-bottom: 14px; }
+  .section ul, .section ol { padding-left: 22px; margin-bottom: 14px; display: flex; flex-direction: column; gap: 8px; }
+  .section li { font-size: 15px; color: var(--text2); }
+  .section li strong { color: var(--text); }
+  .section p strong { color: var(--text); font-weight: 700; }
+  .highlight-box { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 20px 24px; margin: 20px 0; }
+  .highlight-box.green { border-color: rgba(74,222,128,0.25); background: rgba(74,222,128,0.05); }
+  .highlight-box.amber { border-color: rgba(251,191,36,0.25); background: rgba(251,191,36,0.05); }
+  .highlight-box p { margin: 0; }
+  .highlight-box.green p { color: #4ade80; }
+  .section h3 { font-size: 17px; font-weight: 700; margin: 20px 0 8px; color: var(--text); }
+  hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+
+  footer-bar { display: block; text-align: center; padding: 32px; color: var(--text3); font-size: 13px; border-top: 1px solid var(--border); }
+  footer-bar a { color: var(--purple-lt); text-decoration: none; }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="icon.png" alt="Clari" class="nav-logo-img" />
+    <span class="nav-logo-text">Clari<span class="sub">Built for you</span></span>
+  </a>
+  <a class="back" href="index.html">← Back to home</a>
+</nav>
+
+<div class="page-hero">
+  <span class="chip">🔒 Privacy First</span>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: June 2026 &nbsp;·&nbsp; Effective immediately</p>
+  <div class="summary">
+    Clari collects no personal data. Everything — your transactions, SMS, imported statements, and PIN — stays on your device. We never upload, sell, or share your financial information.
+  </div>
+</div>
+
+<div class="content">
+  <div class="toc">
+    <h3>Contents</h3>
+    <ol>
+      <li><a href="#s1">Who we are</a></li>
+      <li><a href="#s2">What data Clari collects</a></li>
+      <li><a href="#s3">What data Clari does NOT collect</a></li>
+      <li><a href="#s4">Permissions we request</a></li>
+      <li><a href="#s5">Local storage</a></li>
+      <li><a href="#s6">Third-party services</a></li>
+      <li><a href="#s7">Children's privacy</a></li>
+      <li><a href="#s8">Your rights</a></li>
+      <li><a href="#s9">Changes to this policy</a></li>
+      <li><a href="#s10">Contact us</a></li>
+    </ol>
+  </div>
+
+  <div class="section" id="s1">
+    <h2><span class="num">1</span> Who we are</h2>
+    <p>Clari is a product by <strong><span class="bm">bfy<small>a<span class="ri">ı</span></small></span></strong>, an independent software company based in India. Clari is an Android expense tracker — it reads your transaction SMS and bank statements on your device and turns them into clear spending insights. Our website is <a href="https://bfyai.in" style="color:var(--purple-lt)"><span class="bm">bfy<small>a<span class="ri">ı</span></small></span>.in</a> and you can reach us at <a href="mailto:hello@bfyai.in" style="color:var(--purple-lt)">hello@bfyai.in</a>.</p>
+  </div>
+
+  <div class="section" id="s2">
+    <h2><span class="num">2</span> What data Clari collects</h2>
+    <div class="highlight-box green">
+      <p>✅ <strong>Almost nothing.</strong> Clari is designed to work entirely offline. The only data we ever receive is what you voluntarily send us — for example, an email to our support address.</p>
+    </div>
+    <p>Specifically, Clari may collect:</p>
+    <ul>
+      <li><strong>Support enquiries</strong> — if you email us, we receive your email address and the content of your message. We use this solely to respond to you.</li>
+      <li><strong>Crash reports (optional)</strong> — if you opt in to crash reporting, anonymised stack traces may be sent to help us fix bugs. No financial or personal data is included.</li>
+      <li><strong>Subscription status</strong> — Google Play manages payment. We receive only a subscription token (no payment card details) to verify your Pro status.</li>
+    </ul>
+  </div>
+
+  <div class="section" id="s3">
+    <h2><span class="num">3</span> What data Clari does NOT collect</h2>
+    <ul>
+      <li>Your <strong>transactions, balances, or ledger</strong></li>
+      <li>The <strong>contents of your SMS messages</strong></li>
+      <li>Your <strong>imported bank or credit-card statements</strong></li>
+      <li>Your <strong>name, phone number, or identity</strong></li>
+      <li>Your <strong>location</strong></li>
+      <li>Your <strong>PIN</strong> or any biometric data</li>
+      <li>Any <strong>advertising identifiers</strong> or tracking cookies</li>
+      <li>Any data via <strong>analytics SDKs</strong> — we do not integrate Firebase Analytics, Google Analytics, Facebook SDK, or similar</li>
+    </ul>
+    <div class="highlight-box green">
+      <p>✅ There is no user account. There is no login. Clari does not know who you are.</p>
+    </div>
+  </div>
+
+  <div class="section" id="s4">
+    <h2><span class="num">4</span> Permissions we request</h2>
+    <p>Clari requests the following Android permissions. All processing happens on-device.</p>
+    <h3>READ_SMS</h3>
+    <p>Used to read bank and UPI transaction alerts so Clari can log your expenses automatically. Only financial messages are parsed, the parsing happens entirely on your device, and message content is never uploaded.</p>
+    <h3>Storage / file access (PDF statements)</h3>
+    <p>Requested only when you choose to import a bank or credit-card statement. The selected PDF is read and parsed locally; the file and its contents are never sent off-device.</p>
+    <h3>POST_NOTIFICATIONS</h3>
+    <p>To show due-date reminders for EMIs, subscriptions, and bills, and to confirm when new transactions have been synced.</p>
+    <h3>Internet (INTERNET permission)</h3>
+    <p>Used only to verify your Google Play subscription token. No transaction, SMS, or statement data is ever transmitted.</p>
+  </div>
+
+  <div class="section" id="s5">
+    <h2><span class="num">5</span> Local storage</h2>
+    <p>Clari stores the following data <strong>locally on your device only</strong>, in a private on-device database (SQLite) and encrypted key-value storage (MMKV):</p>
+    <ul>
+      <li>Your transaction ledger and categories</li>
+      <li>Parsed dues, EMIs, and reminders</li>
+      <li>Your hashed PIN (never stored in plain text)</li>
+      <li>App settings and preferences</li>
+      <li>Trial start timestamp</li>
+      <li>Google Play subscription token</li>
+    </ul>
+    <p>This data is scoped to the app's private storage. It is deleted when you uninstall Clari or clear app data. We cannot access it remotely.</p>
+  </div>
+
+  <div class="section" id="s6">
+    <h2><span class="num">6</span> Third-party services</h2>
+    <h3>Google Play Billing</h3>
+    <p>In-app purchases are processed entirely by Google Play. We receive a subscription receipt token to verify your Pro status. We never see your payment card details. Google's privacy policy governs their handling of payment data.</p>
+    <div class="highlight-box amber">
+      <p style="color:var(--amber)">⚠️ We do not integrate any advertising networks, social login providers, or third-party analytics SDKs. Clari makes no network calls to read or process your financial data.</p>
+    </div>
+  </div>
+
+  <div class="section" id="s7">
+    <h2><span class="num">7</span> Children's privacy</h2>
+    <p>Clari is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will delete it promptly.</p>
+  </div>
+
+  <div class="section" id="s8">
+    <h2><span class="num">8</span> Your rights</h2>
+    <p>Because Clari stores all data locally on your device, you have complete control:</p>
+    <ul>
+      <li><strong>Access</strong> — all your data is on your own device, accessible through the app.</li>
+      <li><strong>Deletion</strong> — uninstalling Clari or clearing app data deletes everything. You can also clear data from within the app at any time.</li>
+      <li><strong>Portability</strong> — export your full ledger as CSV or JSON whenever you like.</li>
+      <li><strong>Correction</strong> — you can edit transactions, categories, dues, and preferences inside the app at any time.</li>
+    </ul>
+    <p>For any support queries related to privacy, email us at <a href="mailto:hello@bfyai.in" style="color:var(--purple-lt)">hello@bfyai.in</a>.</p>
+  </div>
+
+  <div class="section" id="s9">
+    <h2><span class="num">9</span> Changes to this policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will update the "Last updated" date at the top of this page. Continued use of Clari after changes constitutes acceptance of the revised policy. We encourage you to review this page periodically.</p>
+  </div>
+
+  <div class="section" id="s10">
+    <h2><span class="num">10</span> Contact us</h2>
+    <p>Questions about privacy? We're happy to help.</p>
+    <div class="highlight-box">
+      <p><strong><span class="bm">bfy<small>a<span class="ri">ı</span></small></span> — Clari Team</strong><br/>
+      Email: <a href="mailto:hello@bfyai.in" style="color:var(--purple-lt)">hello@bfyai.in</a><br/>
+      Website: <a href="https://clari.bfyai.in" style="color:var(--purple-lt)">clari.bfyai.in</a></p>
+    </div>
+  </div>
+
+  <hr />
+  <p style="font-size:13px;color:var(--text3);text-align:center">
+    <a href="index.html" style="color:var(--purple-lt);text-decoration:none">← Back to home</a>
+    &nbsp;·&nbsp;
+    <a href="terms.html" style="color:var(--purple-lt);text-decoration:none">Terms &amp; Conditions</a>
+    &nbsp;·&nbsp;
+    <a href="data.html" style="color:var(--purple-lt);text-decoration:none">Data Policy</a>
+  </p>
+</div>
+
+<footer-bar>
+  © 2024–2026 <span class="bm">bfy<small>a<span class="ri">ı</span></small></span> · <a href="https://clari.bfyai.in">clari.bfyai.in</a>
+</footer-bar>
+</body>
+</html>
